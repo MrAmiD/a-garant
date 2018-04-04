@@ -354,7 +354,7 @@ blockquote
 	font-weight: 900
 	font-size: 16px
 	line-height: 1.2
-	max-width: 360px
+	max-width: 655px
 	padding-left: 45px
 	margin: 10px 0
 	position: relative
@@ -371,59 +371,24 @@ blockquote
 		top: 0px
 .content
 	overflow-x: hidden
+	blockquote
+		padding-left: 38px
+		padding-top: 0px
 	h1
-		text-align: center
+		text-align: left
 		font-family: $default-font
 		margin-top: 63px
-		font-size: 30px
-		text-transform: uppercase
+		font-size: 36px
 		position: relative
-		//padding-bottom: 55px
 		margin-bottom: 14px
-		//&:after
-		//	content: ''
-		//	position: absolute
-		//	width: 3px
-		//	height: 50px
-		//	background: $accent
-		//	left: 50%
-		//	transform: translateX(-50%)
-		//	bottom: -6px
-	h2
-		font-size: 24px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h3
-		font-size: 22px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h4
-		font-size: 20px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h5
+		color: $dark
+		font-weight: 900
+	h2, h3, h4, h5
 		font-size: 18px
-		font-weight: 500
+		font-weight: 700
 		margin: 15px 0
 		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
-	h6
-		font-size: 16px
-		font-weight: 500
-		margin: 15px 0
-		margin-top: 30px
-		text-transform: uppercase
-		color: $accent
+		color: $dark
 	b
 		font-size: 16px
 		font-weight: 900
@@ -456,12 +421,11 @@ blockquote
 				background-color: #FFFFFF
 				border: solid 1px #d9d9d9
 		tr
-			&:nth-child(odd)
-				background: #f7f7f7
+			&:first-child
+				font-weight: 900
 			td, th
-				border: solid 1px #d9d9d9
-				padding-left: 15px
-				padding-right: 15px
+				border: solid 1px $accent2
+				padding: 10px 15px
 				text-align: center
 	ul
 		list-style: none
@@ -479,7 +443,7 @@ blockquote
 				position: absolute
 				left: -25px
 				top: 7px
-				background: $accent
+				background: $accent2
 				border-radius: 50%
 			ul
 				margin-top: 0px
@@ -502,10 +466,11 @@ blockquote
 		padding-left: 0px
 		margin-top: 20px
 		li
-			font-weight: 700
+			font-weight: 500
 			&:before
 				content: counter(item) ') '
 				counter-increment: item
+				font-weight: 900
 
 .breadcrumb
 	padding: 0

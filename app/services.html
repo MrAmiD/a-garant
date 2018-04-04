@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title><---DevLayouts</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+    <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+
+
+
+    <!-- Web Font / @font-face : BEGIN -->
+    <!-- NOTE: If web fonts are not required, lines 9 - 26 can be safely removed. -->
+
+    <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+    <!--[if mso]>
+    <style>
+        * {
+            font-family: sans-serif !important;
+        }
+    </style>
+    <![endif]-->
+
+    <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+    <!--[if !mso]><!-->
+    <!-- insert web font reference, eg: <link href='https://praweb.ru/theme/fonts/main/fonts.css' rel='stylesheet' type='text/css'> -->
+    <!--<![endif]-->
+
+    <!-- Web Font / @font-face : END -->
+
+</head>
+
+<body>
+
+<!--Top Arrow start-->
+<a href="javascript:" id="return-to-top">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</a>
+<!--Top Arrow end-->
+
+<div id="my-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-3">
+                <a href="/" class="logo-link">
+                    <div class="logo-c">
+                        <div class="svg-c">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="40px" height="40px">
+                                <image  x="0px" y="0px" width="40px" height="40px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABlVBMVEX////Y9/8Ayvff4eKG5/83o8WfpKku1v0fVWxeZ3Hv/P8Ayf0AxvcjLjz6+/uh7P4UmcDIy85P3P6HjZX8/v8Azf0Ax/pHUFu78P8An8sWIzLt7/Br4P2wtLkA0P1wd4EwOkiG5v/Y2t2YnaTu/P8Ayv1ZYWwdKjf5+fnCxcj6/v+AiI+78f8/SlVs4f4VITDq6+wA0f6rr7TX9/9pcXuH5/8pNUP+/v4v1/3T1dnt+/+TmKCh7P9SW2cbJzb29vf7/v+7v8MAps97gopKn7w8RlKlws7j5ucA0f0iLjukqa9r4f5lbXdkbHWvs7gmMT/8/P7u+/8AyfwAzPz6/v/x8vMaJzbN0NNVX2mNk5qh6/6fpKtLVWAAyfzs+//n6OoWIzEaJTS88f9HUl22ub6Sl550fIXV9//a3N4zPksAyPwAyf0AyP0WJDQUITAWX3sUIC8XLD4VITAScI4YPFIUIS8Asd8Kf6MZTmYAvvAWJDMAkLcWX3wAxfoYLT8An8sSb44ZPVIAsN8LgKQAve8Axvr///+kJsCBAAAAanRSTlMAJuEjc9RpvvivEPr28AVa8zylgwPt/slB/v0SjFbXnOJzKnAQ+rX1B0MEiUHQjP4X11wno3PoAb4wEXZavPgKBEr4kMbVZB3Y8GOMqKlX7QMR+u4FD/g2uHxaZ8P7Ehr9+kHHUHeWKCjdco6sowAAAAFiS0dEAIgFHUgAAAAHdElNRQfiBAQIOSGhRO3iAAACqElEQVQ4y22VB1/UQBDFg70XFHtXFBWxoth77wV77+4uyzC6imIv39t5M5srJAkJ97v738y+92ZzRdE8Opxz3sstBHkh14SJRe0xKQjh5Qqg5Zg8pR6c6hSQWh6nd9Om13IzZqKjNJYTawizhmbPqQPngggGael5Mc6vAzutHECn6xwmWlDDLewC6KFWS7tFI8yLa8AlJiPYQqX5Uua4bHkVXAH/YIw3I8N7ikQrq+Cq7HQ+fPjAKabVFa7DNbRAiHcfKUWKayrgWv3UZ9XyjU/ExEzrqrEoZeHhPqogrx/HbejWdZnVuH3+whQ50sZqLF6NLg0f48SROW3qGR+L8+Wfiv8qLoKkzW3cli40NUibf/suJmKRaWsb2GvJaeuAdH4IQilFpm1tYJ/ap60N/wlrUpKi23e0gjvNlpDVOP9L2pJkKNJ3tXC7c24Wodx+U2JdY6K4pwXst8H2eW6c+4OBkEt68959TXAgC7E9I+eoFJO+kraw+xvcge7soCQD0e7vEJlqDFA62AAPmYPeekvlMQiRCxjz4WYsAVAIeSScHxYDYU3ESvnI0cwd61K9HnsQUsK/EamD5Ul/4ePxMpYMmA55cYI15ZTgUSI62YjF20PEezPnlPQVIKI3LDpd7pagk6gZquNnCG0jkk5A6azF4k0F8oM94VzP+ag+wm5kky6UseQl2pC7i8UlVSwVUVZKXs67JT8evDkUeosrOg2Qo5Xj1WvCXb/hmgaCu3mrGLwN/6K21Um/g1jyxrOZlVunvHlXDcQCMW3E9zSWrFY1yf/78uYDrceWoxwPEUsW4nPQjx4L+OQpWdTIUPBng8Vzb89OVz7MBlThC4QSIRs+RnpZ9PmGFMP7FXyFzY9gIhYR6TV2S+MnQ8fsjYJvtRJIxoaI7/4D2lXRDv33ty0AAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+                        <div class="logo-txt">
+                            <div class="main-t">
+                                А-ГАРАНТ
+                            </div>
+                            <div class="discr-t">
+                                краевой юридический центр
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 main-menu-cc">
+                <div class="main-menu">
+                    <ul>
+                        <li data-trigger="#vaka" >
+                            <a href="javascript:void(0)">
+                                Отзывы клиентов
+                            </a>
+                        </li>
+                        <li data-trigger="#slider-object">
+                            <a href="javascript:void(0)">
+                                О нас
+                            </a>
+                        </li>
+                        <li data-trigger="#about-company">
+                            <a href="javascript:void(0)">
+                                Услуги
+                            </a>
+                        </li>
+                        <li data-trigger="#employer">
+                            <a href="javascript:void(0)">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 call-hcc col-md-7 col-lg-8 col-xl-5">
+                <div class="call-b">
+                    <div class="phone-hc">
+                        <div class="svg-c">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="16px" height="17px">
+                                <path fill-rule="evenodd"  fill="rgb(245, 245, 245)"
+                                      d="M10.820,16.156 C9.918,16.163 9.078,15.926 8.271,15.543 C6.518,14.713 5.131,13.436 3.867,12.010 C2.772,10.776 1.833,9.441 1.255,7.887 C0.657,6.280 0.625,4.682 1.395,3.108 C1.840,2.197 2.621,1.605 3.415,1.035 C3.782,0.772 4.238,0.798 4.571,1.088 C5.525,1.919 6.207,2.943 6.504,4.176 C6.627,4.688 6.436,5.157 6.009,5.502 C5.712,5.741 5.413,5.977 5.115,6.214 C4.551,6.660 4.411,7.092 4.610,7.779 C4.692,8.061 4.818,8.324 4.971,8.574 C5.710,9.784 6.643,10.824 7.787,11.674 C7.912,11.767 8.042,11.856 8.177,11.934 C8.889,12.345 9.451,12.276 10.040,11.705 C10.236,11.514 10.417,11.309 10.615,11.120 C11.194,10.564 11.911,10.423 12.610,10.818 C13.483,11.311 14.241,11.969 14.881,12.735 C15.348,13.292 15.280,13.847 14.734,14.334 C14.133,14.871 13.589,15.484 12.801,15.785 C12.161,16.030 11.502,16.150 10.820,16.156 Z"/>
+                            </svg>
+                        </div>
+                        <a href="tel:+73422763606">
+                            +7 (342) 276-36-06
+                        </a>
+                    </div>
+                    <div class="consult-b">
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-1 col-lg menu-ccc">
+                <div class="menu-m-b">
+                    <a href="#my-menu" class="hamburger hamburger--squeeze js-hamburger" type="button" id="menu-btn">
+		          <span class="hamburger-box">
+		              <span class="hamburger-inner"></span>
+		          </span>
+                    </a>
+                    <nav id="my-menu">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="my-content" class="serv-page">
+    <section class="sec-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="left-c">
+                        <h2 class="h2 sec-title">
+						<span class="num-txt">
+							01
+						</span> услуги
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="content">
+                        <h1> Регистрация изменений в ЕГРЮЛ, в учредительные документы
+                        </h1>
+                        <h2>
+                            Подготовка документов для регистрации любых изменений в сведения о Вашей компании, связанных либо не связанных с внесением изменений в учредительные документы.
+                        </h2>
+                        <ul>
+                            <li>
+                                подготовка документов для внесения изменений в ЕГРЮЛ - от 1000 до 3 000 рублей в зависимости от количества изменений;
+                            </li>
+                            <li>
+                                подготовка документов для внесения изменений в учредительные документы - от 1000 до 10 000 рублей в зависимости от количества изменений;
+                            </li>
+                            <li>
+                                регистрация изменений в ЕГРЮЛ, в учредительные документы "под ключ" - от 4000 до 6 000 рублей в зависимости от количества изменений, для некоммерческих организаций - 9 000 рублей.
+                            </li>
+                        </ul>
+                        <h3>
+                            Регистрация изменений в ЕГРЮЛ,  в учредительные документы "под ключ" включает в себя:
+                        </h3>
+                        <ul>
+                            <li>
+                                подготовка документов для внесения изменений в ЕГРЮЛ - от 1000 до 3 000 рублей в зависимости от количества изменений;
+                            </li>
+                            <li>
+                                подготовка документов для внесения изменений в учредительные документы - от 1000 до 10 000 рублей в зависимости от количества изменений;
+                            </li>
+                            <li>
+                                регистрация изменений в ЕГРЮЛ, в учредительные документы "под ключ" - от 4000 до 6 000 рублей в зависимости от количества изменений, для некоммерческих организаций - 9 000 рублей.
+                            </li>
+                        </ul>
+                        <h3>
+                            Регистрация изменений в ЕГРЮЛ,  в учредительные документы "под ключ" включает в себя:
+                        </h3>
+                        <ol>
+                            <li>
+                                подготовка документов;
+                            </li>
+                            <li>
+                                подача документов в ИФНС/Министерство юстиции (для НКО);
+                            </li>
+                            <li>
+                                получение готовых документов в ИФНС/Министерстве юстиции (для НКО);
+                            </li>
+                        </ol>
+
+                        <table>
+                            <tr>
+                                <td>
+                                    Консультация
+                                </td>
+                                <td>
+                                    Срок
+                                </td>
+                                <td>
+                                    Консультация
+                                </td>
+                                <td>
+                                    Документ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Услуги
+                                </td>
+                                <td>
+                                    Консультация
+                                </td>
+                                <td>
+                                    Консультация
+                                </td>
+                                <td>
+                                    Цена
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Услуги
+                                </td>
+                                <td>
+                                    Консультация
+                                </td>
+                                <td>
+                                    Срок
+                                </td>
+                                <td>
+                                    Консультация
+                                </td>
+                            </tr>
+                        </table>
+                        <br><br><br>
+                        <blockquote>
+                            Подготовка документов для регистрации любых изменений в сведения о Вашей компании, связанных либо не связанных с внесением изменений в учредительные документы.
+                        </blockquote>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback sec-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 sec-title white-txt">
+						<span class="num-txt">
+							02
+						</span>отзывы
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-slider">
+                        <div class="item">
+                            <div class="content-c">
+                                <div class="row">
+                                    <div class="col-12 col-lg-5">
+                                        <div class="left-b">
+                                            <blockquote>
+                                                Оперативно <br>
+                                                и безошибочно
+                                            </blockquote>
+                                            <a href="#">
+                                                Читать отзыв полностью
+												<span class="svg-c">
+													<svg
+                                               xmlns="http://www.w3.org/2000/svg"
+                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                               width="10px" height="12px">
+															<path fill-rule="evenodd"  fill="rgb(13, 38, 56)"
+                                                   d="M9.782,11.785 C9.636,11.931 9.459,12.004 9.251,12.004 L0.747,12.004 C0.538,12.004 0.361,11.931 0.215,11.785 C0.069,11.640 -0.003,11.462 -0.003,11.254 L-0.003,0.747 C-0.003,0.539 0.069,0.361 0.215,0.216 C0.361,0.069 0.538,-0.003 0.747,-0.003 L4.999,-0.003 L4.999,4.249 C4.999,4.458 5.072,4.635 5.217,4.781 C5.363,4.927 5.541,5.000 5.749,5.000 L10.001,5.000 L10.001,11.254 C10.001,11.462 9.928,11.639 9.782,11.785 ZM8.000,7.251 C8.000,7.178 7.977,7.118 7.930,7.071 C7.883,7.024 7.823,7.001 7.750,7.001 L2.247,7.001 C2.175,7.001 2.115,7.024 2.068,7.071 C2.021,7.118 1.997,7.178 1.997,7.251 L1.997,7.751 C1.997,7.825 2.021,7.884 2.068,7.931 C2.115,7.978 2.175,8.002 2.247,8.002 L7.750,8.002 C7.823,8.002 7.883,7.978 7.930,7.931 C7.977,7.884 8.000,7.825 8.000,7.751 L8.000,7.251 ZM8.000,9.252 C8.000,9.179 7.977,9.119 7.930,9.072 C7.883,9.026 7.823,9.002 7.750,9.002 L2.247,9.002 C2.175,9.002 2.115,9.026 2.068,9.072 C2.021,9.119 1.997,9.179 1.997,9.252 L1.997,9.753 C1.997,9.826 2.021,9.886 2.068,9.932 C2.115,9.979 2.175,10.003 2.247,10.003 L7.750,10.003 C7.823,10.003 7.883,9.979 7.930,9.932 C7.977,9.886 8.000,9.826 8.000,9.753 L8.000,9.252 ZM5.999,0.020 C6.426,0.098 6.770,0.268 7.031,0.528 L9.469,2.967 C9.730,3.228 9.899,3.572 9.977,3.999 L5.999,3.999 L5.999,0.020 Z"/>
+													</svg>
+												</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-2"></div>
+                                    <div class="col-12 col-lg-5">
+                                        <p>
+                                            Коллектив компании "А-Гарант" работает оперативно и безошибочно, всегда достигая успешного результата.
+                                        </p>
+                                        <p>
+                                            - Третьяков Г.Ю. <br>
+                                            президент  ПРОО "Хоккейный клуб "Молот-Прикамье"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content-c">
+                                <div class="row">
+                                    <div class="col-12 col-lg-5">
+                                        <div class="left-b">
+                                            <blockquote>
+                                                Оперативно <br>
+                                                и безошибочно
+                                            </blockquote>
+                                            <a href="#">
+                                                Читать отзыв полностью
+												<span class="svg-c">
+													<svg
+                                               xmlns="http://www.w3.org/2000/svg"
+                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                               width="10px" height="12px">
+															<path fill-rule="evenodd"  fill="rgb(13, 38, 56)"
+                                                   d="M9.782,11.785 C9.636,11.931 9.459,12.004 9.251,12.004 L0.747,12.004 C0.538,12.004 0.361,11.931 0.215,11.785 C0.069,11.640 -0.003,11.462 -0.003,11.254 L-0.003,0.747 C-0.003,0.539 0.069,0.361 0.215,0.216 C0.361,0.069 0.538,-0.003 0.747,-0.003 L4.999,-0.003 L4.999,4.249 C4.999,4.458 5.072,4.635 5.217,4.781 C5.363,4.927 5.541,5.000 5.749,5.000 L10.001,5.000 L10.001,11.254 C10.001,11.462 9.928,11.639 9.782,11.785 ZM8.000,7.251 C8.000,7.178 7.977,7.118 7.930,7.071 C7.883,7.024 7.823,7.001 7.750,7.001 L2.247,7.001 C2.175,7.001 2.115,7.024 2.068,7.071 C2.021,7.118 1.997,7.178 1.997,7.251 L1.997,7.751 C1.997,7.825 2.021,7.884 2.068,7.931 C2.115,7.978 2.175,8.002 2.247,8.002 L7.750,8.002 C7.823,8.002 7.883,7.978 7.930,7.931 C7.977,7.884 8.000,7.825 8.000,7.751 L8.000,7.251 ZM8.000,9.252 C8.000,9.179 7.977,9.119 7.930,9.072 C7.883,9.026 7.823,9.002 7.750,9.002 L2.247,9.002 C2.175,9.002 2.115,9.026 2.068,9.072 C2.021,9.119 1.997,9.179 1.997,9.252 L1.997,9.753 C1.997,9.826 2.021,9.886 2.068,9.932 C2.115,9.979 2.175,10.003 2.247,10.003 L7.750,10.003 C7.823,10.003 7.883,9.979 7.930,9.932 C7.977,9.886 8.000,9.826 8.000,9.753 L8.000,9.252 ZM5.999,0.020 C6.426,0.098 6.770,0.268 7.031,0.528 L9.469,2.967 C9.730,3.228 9.899,3.572 9.977,3.999 L5.999,3.999 L5.999,0.020 Z"/>
+													</svg>
+												</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-2"></div>
+                                    <div class="col-12 col-lg-5">
+                                        <p>
+                                            Коллектив компании "А-Гарант" работает оперативно и безошибочно, всегда достигая успешного результата.
+                                        </p>
+                                        <p>
+                                            - Третьяков Г.Ю. <br>
+                                            президент  ПРОО "Хоккейный клуб "Молот-Прикамье"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="content-c">
+                                <div class="row">
+                                    <div class="col-12 col-lg-5">
+                                        <div class="left-b">
+                                            <blockquote>
+                                                Оперативно <br>
+                                                и безошибочно
+                                            </blockquote>
+                                            <a href="#">
+                                                Читать отзыв полностью
+												<span class="svg-c">
+													<svg
+                                               xmlns="http://www.w3.org/2000/svg"
+                                               xmlns:xlink="http://www.w3.org/1999/xlink"
+                                               width="10px" height="12px">
+															<path fill-rule="evenodd"  fill="rgb(13, 38, 56)"
+                                                   d="M9.782,11.785 C9.636,11.931 9.459,12.004 9.251,12.004 L0.747,12.004 C0.538,12.004 0.361,11.931 0.215,11.785 C0.069,11.640 -0.003,11.462 -0.003,11.254 L-0.003,0.747 C-0.003,0.539 0.069,0.361 0.215,0.216 C0.361,0.069 0.538,-0.003 0.747,-0.003 L4.999,-0.003 L4.999,4.249 C4.999,4.458 5.072,4.635 5.217,4.781 C5.363,4.927 5.541,5.000 5.749,5.000 L10.001,5.000 L10.001,11.254 C10.001,11.462 9.928,11.639 9.782,11.785 ZM8.000,7.251 C8.000,7.178 7.977,7.118 7.930,7.071 C7.883,7.024 7.823,7.001 7.750,7.001 L2.247,7.001 C2.175,7.001 2.115,7.024 2.068,7.071 C2.021,7.118 1.997,7.178 1.997,7.251 L1.997,7.751 C1.997,7.825 2.021,7.884 2.068,7.931 C2.115,7.978 2.175,8.002 2.247,8.002 L7.750,8.002 C7.823,8.002 7.883,7.978 7.930,7.931 C7.977,7.884 8.000,7.825 8.000,7.751 L8.000,7.251 ZM8.000,9.252 C8.000,9.179 7.977,9.119 7.930,9.072 C7.883,9.026 7.823,9.002 7.750,9.002 L2.247,9.002 C2.175,9.002 2.115,9.026 2.068,9.072 C2.021,9.119 1.997,9.179 1.997,9.252 L1.997,9.753 C1.997,9.826 2.021,9.886 2.068,9.932 C2.115,9.979 2.175,10.003 2.247,10.003 L7.750,10.003 C7.823,10.003 7.883,9.979 7.930,9.932 C7.977,9.886 8.000,9.826 8.000,9.753 L8.000,9.252 ZM5.999,0.020 C6.426,0.098 6.770,0.268 7.031,0.528 L9.469,2.967 C9.730,3.228 9.899,3.572 9.977,3.999 L5.999,3.999 L5.999,0.020 Z"/>
+													</svg>
+												</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-2"></div>
+                                    <div class="col-12 col-lg-5">
+                                        <p>
+                                            Коллектив компании "А-Гарант" работает оперативно и безошибочно, всегда достигая успешного результата.
+                                        </p>
+                                        <p>
+                                            - Третьяков Г.Ю. <br>
+                                            президент  ПРОО "Хоккейный клуб "Молот-Прикамье"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-b sec-plus">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 sec-title">
+						<span class="num-txt">
+							03
+						</span>наши плюсы
+                    </h2>
+                </div>
+            </div>
+            <div class="row plus-r">
+                <div class="col-12 col-lg-6">
+                    <div class="plus-i">
+                        <div class="plus-ico">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="30px" height="23px">
+                                <image  x="0px" y="0px" width="30px" height="23px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAXCAQAAAC2NjfhAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBAQLNBBHci3MAAACNElEQVQ4y32UT0hUURjFf29mzNRsIDEdy7IcdGMEBo0FRhTMxkULSyJXQgUyLookbAiiQEgIoqBcaCUkuKlFoJuIXASFFZWTpWkJMkJDNMIkgpbTaeF7r/d0nO9u7rnfOd+5f7gfIsu4qVC2vA9neJADGVSQj+FieFl2EGz2TjoI4nVRa5hlDo+NxV8GuL9W3EmU88w4fEWUIWKO3eTTwwJBUnYxIVSkET1QdNWpHqvOhUN6r49qs7C1HFG//JpWhYs8qLALv1SHQkoobwVb5znBM1IM08b6UUkJzxljnuPObddrTLlCtRpV8brO1xQTQpf0QRv/OzcyxBLwjlnOruObzym6ALjBDhosZ7++aa9Z/aDGVZjR+YCSCpjzq3plOTczwahZf4QZTmZ0vs4A3815L5UcAg8Gx3hiU9J008KGNdJqtvPIRnEGuQyoTp+Us+pBmtZs+4ImXJzd+ql96JYuCiGPDDPRoOGV27TFfn1Rowq02R45uqt+H82MU0UeuRik+cMiRRym2r4FgCBVnKMV8OIhjUjjZ7+Pdroo5w5vWMRHDS3soZNJ14m/0stp4nTzmWUKqCfCAlcMQTlnCPOLOTZRzGt6iJmiQW7z1JyHiXCEKeYJUMI9+ohZv6qIMraQIkHC4egUg5cySgkwTXLl0axmkCSZ4W0NVytIEyfuTHvIFr9ZypbOJi4kQGk2saGMq9QSpokfbGWSh7ywe4c7MvbFbXqrPh0V2qV2Tao1c/f8Bwqwe5MY7jOUAAAAAElFTkSuQmCC" />
+                            </svg>
+                        </div>
+                        <div class="pl-txt">
+                            <h3 class="h3">
+                                Честность
+                            </h3>
+                            <p>
+                                Честность, порядочность и открытость наших юристов позволяет вам узнать о всех рисках, подводных камнях, перспективах дела, и поможет принять взвешанное решение до начала нашей работы. Экономить свое время и деньги! Без обманутых ожиданий и призрачных надежд.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="plus-i">
+                        <div class="plus-ico">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="27px" height="29px">
+                                <image  x="0px" y="0px" width="27px" height="29px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAdCAQAAADxhN/DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBAQMABGOEPgoAAACzElEQVQ4y4XUXWgXZBTH8d/8rxedyuZEsQtfKrGyIsUCL5xBrOjFXm6ShAwpMs2wC8OKosRIEiOTSCsMEevCEgUlbWhdpFGS6cosZFhRaeF8mbOczvHpwv+2v/v/o/PcPOfly3Oe5znnRMpWje3Wa1RnokX2aCiPSQVsiTbrnbZXq680aTb4/7B6M3SZJkZ7wmT9DPGHt435b+wO6zTrtFjEpYYVT5nquEOazDWwErZFu8ddKW60zilHnLDHg2KQu23WZlwl7GObRDyizSYz3Oo+S7BWQTQ4YHglbLXvxFTnPFlineS4FWKu3fqXY8O0WC2+926fZ7rLaePcrsM9fbFBNtlpgAn+dEvZlzRbLl5y0k0XY4t1GS1mOmBIGbbVBhG7fetykX65IOvyW55JciqFDExfqcnZJNMyJm+kM0lKr37KfHXaTO9zVq2fzTZWq+cqveSH9otV9qu7CFvusEvMc+BCgqVJJklVfk+yIMnWTCrahmRV5mdWOnMw51LTHVpdgtVncEblcCZnTTbmeFoyLKNSlcZsz/Bcl5GpzbFibEkyT2l22k53ikZLvWm5R9UY4SOHnbWycpXESl9b5h9XiRiqSkSTXdZqL71xKTTdGRPEJ74xx2bss9ArWo1Q7Uf7esFeaLQTXhQxyi+OYodzaPeYiOvxejm2zZcKPc261E8Gekubm3siFtA9ILpNT/u7t5s0OOE2UavFp6qL1v4+1+qKXmy8Dg/3QMMdsay4n4JFPZ6hjlrbjRXs8p5a0zSK+MAPJUPnNZ0mimu86gZzMPMCthj7teu0TTyko7s9iuNvrxaXmQU6cMTIuN9Ba8zTYIXPDHDUs31K+VpdnveCX91rpg3+0hRj1RfdDzhol+1l3RYLnXfIjqJWbUqpc7wu7a6ugMVGvFO5Sup1mF0RinHOeL9XL7zc2wGFnMzqnE8lOZZCWvNFt/ov2CFoI/DwVq8AAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+                        <div class="pl-txt">
+                            <h3 class="h3">
+                                Гарантия
+                            </h3>
+                            <p>
+                                Честность, порядочность и открытость наших юристов позволяет вам узнать о всех рисках, подводных камнях, перспективах дела, и поможет принять взвешанное решение до начала нашей работы. Экономить свое время и деньги! Без обманутых ожиданий и призрачных надежд.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="plus-i">
+                        <div class="plus-ico">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="26px" height="24px">
+                                <image  x="0px" y="0px" width="26px" height="24px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAYCAQAAABOiyVOAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBAQMADWyExz5AAABa0lEQVQ4y92SzStEYRjFf+/cm49Q0pDmmkZKYsGs7GRhORuRko1slGRlzz8gNlJWUpKy9w8QJcoCKRssZEZj4WPGMPcem/Fx71BmY+GczdvTOc/zPh+IAENakKtbJXWjpFwtqjyoMSKAZRJMksQFDGHm2WcUvyyQpUvXavdFIkqpx6+yceilrJApR4IwnXR/yZqjjimaKAPAkGfbaI9H0tiFspXAc+DDFVg8Fd4utdSiM0W/lDayikZj+WINOrTJY/ladIOTCUQsvBCGEKUghCnN8OH7j6Y8WQAGWGHiR90YKwwDkCFvE2WILVpZYo5JXtkuHMwnXokzzSrzZDiljxajS64op4Es7ayT4Ny3bACPGDv0s4tDihwRoyMGucNhjXvqGee4qE/RzBppwoxwQQ0b6EQxIdShWfUV3d07ezSjuBBq1AE6UcuP0u/o6OAv9+TxUpIjh2dTg8PLryt6RKg22qSNhxJMVVy8AVKd3VeeLpuLAAAAAElFTkSuQmCC" />
+                            </svg>
+                        </div>
+                        <div class="pl-txt">
+                            <h3 class="h3">
+                                Квалификация
+                            </h3>
+                            <p>
+                                Честность, порядочность и открытость наших юристов позволяет вам узнать о всех рисках, подводных камнях, перспективах дела, и поможет принять взвешанное решение до начала нашей работы. Экономить свое время и деньги! Без обманутых ожиданий и призрачных надежд.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="plus-i">
+                        <div class="plus-ico">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="29px" height="22px">
+                                <image  x="0px" y="0px" width="29px" height="22px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAWCAQAAACWXV9HAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBAQMASW2vz3cAAABw0lEQVQ4y5XTP0jVURjG8aPYP9RCQqlQKQtDqQZJh7YgIkkpiqarIDRFSBSFW0aJ0FAIqYshEUFLON2isjAKLkWkpunNsCwVbAjnlvo0aPW75p/beZdznpfvyznP+54gpESWPgOOWbNAXyQWCqclxLz2VOx/0dtmxRQ54o2EQ+mjWyQ1ihsSk+2UQV0y00MveygI6g3qU6XFYHpooUlV8/tc9SYllaZ34avuRk5rvVOb3lvzjauMpK57kK7DneIphg2rSA/dYcLuSKLJ83T7ekNXRN6o37hWBSujJb7YFZHbtNsmbkyTTcujXW5GxHwzjgqCgx4Zc0bWUmi597Ij4iXjEu7YLghqvTTgpJx/0VwfUa/4j2GfbVXolikdygRBnT5DGlL/U/DEPXV++qDZOkGn7vnh26vDlPb5ovX69WmIosNmVCrVbNZX54zaE6ldrkfSdZsFq8WMeqXaqjk0R6tpzxyXp933lMGYi316TLioQJDpvLd6Hf7t8E4tfoirkHB/0VYcEDfkihzBBmeNuPY3WaDbuGklS/Qxw369PrkgT1DjW4YQWWWhKDwOy62a0BiKQ1uoDskV5nSRyHLCiBfW/wKRJs2WMzKRlAAAAABJRU5ErkJggg==" />
+                            </svg>
+                        </div>
+                        <div class="pl-txt">
+                            <h3 class="h3">
+                                Опыт
+                            </h3>
+                            <p>
+                                Честность, порядочность и открытость наших юристов позволяет вам узнать о всех рисках, подводных камнях, перспективах дела, и поможет принять взвешанное решение до начала нашей работы. Экономить свое время и деньги! Без обманутых ожиданий и призрачных надежд.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="plus-i">
+                        <div class="plus-ico d-flex align-items-center">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="27px" height="36px">
+                                <image  x="0px" y="0px" width="27px" height="36px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAkCAQAAADS8YmmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBAQMAiWdkm4fAAACUklEQVQ4y5WUTUhUYRSGn3vnOjLjD8lElmUxOkZRBBq1iiKiLCJsGxFRRlQERiC4cSgkg5g2QbvaJIG5qLAQCbIwUluopVGiRJiGWQoZCCaObwubcWa8V++cszrfd597fr+DcNSQRlVgf2fiLF7WON07YRZhipnESA/zcIw8ZpwCcQ7SxEvAyZvnmv35PKKDn7Qxl4430c5FDArTCzJCNwab6afa4bc2ekojWieE9uuH9i39wg7yaEin41aTGt2122QjY3Frknl3uc3RzNG4VcZ3t7kF9Uu3lKtCPdFnZbvLDaEytWlIA3qkoN29oQWnBn6m/wfgJx8Ti53M8o4MphlPjTGGQZgcqglynnJmGCPKXwwy8VLAAA28SMSshEKcYwcBOqhkLUXx+ll8ZT11nOAKU0u9Rciii04GgQOUJtTsNd34uc1uyplIrWSzwsu8dISuq1O+5Eoe1xu7QqfoA91Ixrp0eEUI5atP2xaGK5cSqpihFQhylQ04yzjNVGJxED3UgIZ0Ugg1SLq5rL8S9ahI7Ra7qOE5swDcJ4PHLCej/KEYP+rTIRdZxdRQk8ZVZ+IlPfHRSC16pUG1aK9Lbz51KSRQsSp0V60usS36qECsb5Z6VeoKu6NIYrur9NQFtF3vtSkRy9RL1a8A5alfZ1Jf92p9UL0yHaGQemITmbwUVumTaoRMmUmAR4ZQr2oXz6yEjvymgwBwhAtMEMUARBbzXGKKKM/sXvfCFvGylQpyuEc2AoSfCHsYxkeO08K7rGF90YjOJo1Ti0b0TW9VtHj6D95haghS65M2AAAAAElFTkSuQmCC" />
+                            </svg>
+                        </div>
+                        <div class="pl-txt">
+                            <h3 class="h3">
+                                Цены
+                            </h3>
+                            <p>
+                                Честность, порядочность и открытость наших юристов позволяет вам узнать о всех рисках, подводных камнях, перспективах дела, и поможет принять взвешанное решение до начала нашей работы. Экономить свое время и деньги! Без обманутых ожиданий и призрачных надежд.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="plus-i">
+                        <div class="plus-ico">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="28px" height="26px">
+                                <image  x="0px" y="0px" width="28px" height="26px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAaCAQAAAAOXfQCAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfiBAQMAxWiUG/yAAAClklEQVQ4y4WUW0hUURSG/xlPo2WKd1GwzAykhxCKQjBUMgIregiKsixQiejCoEkRdCHEl4oMuryEOZlaSZeBSDKd0IISlW7glBVZ4Uul4ksFgV8PM7M92pB7v+x/nfWd9Z+99zoOpEj1ya9RxShXmzWk8CNSZ5Wlz3IqT275hIili2SEqOAL2SjsvMg1ohDiFluQJWlSk5qv73LqiqL0QEUamVHNodNKUZl+y6lJSZOSJcmhBDkkIemCLPlUrK/TwFot0S79CiCKkVMSwsF5mok0po7yiiSbyWN0EGfUEXwkooBw4cGDZUsdICW4PswT0hAOhKjhLRkoBAbQq8wx6Cl6iEO46SXNRA/hD6kpQy6a8OBCOBGijlbc9JNpqlXzjoWhfPuGu2igEQvhQojrDAVsBasN2mpr+llZNBnDxTwmyzxx84FMe+7MY47CQwMWq+kix0QP4rfVDgsKi3ruMUCuieyld3q18KBYyzDLjNrJb878m/UvVsxHVhpVyn1y8FD3P7CQcxTwigIT2YGXNEQS7Ryggu3hQBc3GAbyTKQcSA2u5/KUQZ5NfavTXOQoZWmDbmh/UFeqUi2qCqo1GlOJULrJt1k9QR/xtNNKNOX4ycbBXS4RwXq8JOOmLZzVGLx8owOLm3TSHTzFaK5wjzYy2EQ/7VNtHsLm0UknS/nEICv4Sat54Som2EoVfyhkG34W2MFYfHSRQBOPqGUIL+sMmMh+2qlnD89ZzG7eBy6iWM5l7uAllRZeEI9Is7VXyI8QZbwlnQp87CNfjNPNCPk08NLW5+FnKa/JxMtDeiJOJmmRmnRcLpVoXP8fbzSqRt3Wa8U6VaNObdQPjWlMs49+RShWRaoO/WMmKJnFZmgbL9NMEvoLs2zKxTsIX+0AAAAASUVORK5CYII=" />
+                            </svg>
+                        </div>
+                        <div class="pl-txt">
+                            <h3 class="h3">
+                                Надежность
+                            </h3>
+                            <p>
+                                Честность, порядочность и открытость наших юристов позволяет вам узнать о всех рисках, подводных камнях, перспективах дела, и поможет принять взвешанное решение до начала нашей работы. Экономить свое время и деньги! Без обманутых ожиданий и призрачных надежд.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec-b num-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 sec-title ">
+						<span class="num-txt">
+							04
+						</span>мы в цифрах
+                    </h2>
+                </div>
+            </div>
+            <div class="row num-rr">
+                <div class="col-12 col-xl">
+                    <div class="num-c-i">
+                        <div class="num-i">
+                            7
+                        </div>
+                        <div class="num-discr">
+                            <p>
+                                лет опыта <br>
+                                работы
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl">
+                    <div class="num-c-i">
+                        <div class="num-i">
+                            93 <span class="perc">%</span>
+                        </div>
+                        <div class="num-discr">
+                            <p>
+                                выиграных <br>
+                                дел
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl">
+                    <div class="num-c-i">
+                        <div class="num-i">
+                            500
+                        </div>
+                        <div class="num-discr">
+                            <p>
+                                довольных <br>
+                                клиентов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl">
+                    <div class="num-c-i">
+                        <div class="num-i">
+                            54 017 000
+                        </div>
+                        <div class="num-discr">
+                            <p>
+                                рублей отсужено или <br> сохранено для клиентов
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-sec sec-b">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="h2 sec-title white-txt">
+						<span class="num-txt">
+							05
+						</span>наши услуги
+                    </h2>
+                </div>
+            </div>
+            <div class="row btn-sr align-items-md-center">
+                <div class="col-12 col-lg-8">
+                    <h3 class="h3">
+                        Мы предлагаем широкий спектр юридических услуг
+                        для вас и вашего бизнеса
+                    </h3>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <button class="btn-accent">
+                        Получить консультацию
+                    </button>
+                </div>
+            </div>
+            <div class="row serv-rrr">
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Представление интересов в арбитражных судах
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Представление интересов в судах общей юрисдикции
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Лицензирование
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Претензионно <br>
+                                -договорная работа
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Регистрация ООО, ЗАО, ОАО, ИП, некоммерческих организаций
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Регистрация изменений в ЕГРЮЛ, в учредительные документы
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Правовое сопровождение текущей деятельности организации
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Сопровождение сделок с недвижимостью
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Регистрация смены собственника и руководителя предприятия
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-3 col-lg-4">
+                    <div class="serv-i">
+                        <div class="s-name">
+                            <div class="svg-c">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="12px" height="16px">
+                                    <path fill-rule="evenodd"  fill="rgb(0, 201, 253)"
+                                          d="M0.026,-0.002 C0.426,0.269 0.825,0.542 1.226,0.810 C4.770,3.172 8.314,5.534 11.857,7.895 C11.899,7.923 11.940,7.952 12.008,7.998 C8.006,10.665 4.018,13.322 -0.000,15.999 C-0.000,15.909 -0.000,15.850 -0.000,15.791 C-0.000,10.579 -0.000,5.366 -0.000,0.154 C-0.000,0.102 -0.003,0.050 -0.004,-0.002 C0.006,-0.002 0.016,-0.002 0.026,-0.002 Z"/>
+                                </svg>
+                            </div>
+                            <p>
+                                Регистрация товарного знака/прав на интеллектуальную собственность
+                            </p>
+                        </div>
+                        <button class="btn-accent2" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map-sec">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A08511ef9e42c417ae55977754a02ab2806434a3fb5be1cc79f9a7a7cf4088c0d&amp;width=100%25&amp;height=600&amp;lang=ru_RU&amp;scroll=false"></script>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md ">
+                    <div class="ico-cc">
+                        <div class="ico-c">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="12px" height="16px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                      d="M6.005,8.248 C4.608,8.248 3.474,7.096 3.474,5.675 C3.474,4.252 4.608,3.101 6.005,3.101 C7.402,3.101 8.536,4.253 8.536,5.675 C8.536,7.096 7.402,8.248 6.005,8.248 M6.005,-0.001 C2.911,-0.001 0.404,2.549 0.404,5.696 C0.404,8.668 2.940,12.501 4.634,14.368 C5.267,15.064 6.004,16.003 6.004,16.003 C6.004,16.003 6.796,15.059 7.475,14.342 C9.168,12.553 11.605,8.962 11.605,5.696 C11.605,2.549 9.098,-0.001 6.005,-0.001 "/>
+                            </svg>
+                        </div>
+                        <p>
+                            г. Пермь, ул.Пролетарская, д.31а, оф.17
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md ">
+                    <div class="ico-cc">
+                        <div class="ico-c wa-c">
+                            <a href="" class="">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="16px" height="17px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                          d="M15.994,8.530 C15.994,13.099 12.826,16.684 8.572,16.989 C6.964,17.104 5.478,16.760 4.089,15.921 C3.770,15.728 3.487,15.686 3.143,15.818 C2.494,16.067 1.834,16.284 1.179,16.511 C0.726,16.668 0.601,16.496 0.752,16.031 C0.941,15.448 1.097,14.852 1.311,14.280 C1.500,13.773 1.439,13.364 1.181,12.880 C-0.351,10.006 -0.417,7.066 1.158,4.213 C2.715,1.390 5.132,-0.034 8.199,-0.005 C12.586,0.036 15.994,3.817 15.994,8.530 ZM3.546,6.281 C3.546,6.594 3.568,6.902 3.686,7.190 C4.984,10.339 7.108,12.463 10.326,13.164 C11.133,13.340 11.868,12.969 12.421,12.319 C12.989,11.652 12.831,10.881 12.088,10.477 C11.910,10.380 11.731,10.285 11.551,10.192 C10.569,9.685 10.546,9.666 9.876,10.567 C9.533,11.029 9.215,11.081 8.733,10.836 C7.597,10.258 6.682,9.438 6.024,8.288 C5.822,7.936 5.780,7.613 6.075,7.329 C6.644,6.783 6.597,6.193 6.262,5.541 C6.103,5.230 6.007,4.884 5.864,4.564 C5.579,3.925 4.977,3.782 4.445,4.227 C3.821,4.748 3.605,5.477 3.546,6.281 Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="ico-c vb-c">
+                            <a href="" class="">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="16px" height="17px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                          d="M7.897,0.003 C9.549,0.007 11.055,0.183 12.537,0.597 C14.152,1.048 15.173,2.060 15.602,3.649 C16.153,5.689 16.097,7.741 15.567,9.770 C15.166,11.305 14.094,12.229 12.572,12.651 C10.828,13.134 9.043,13.297 7.238,13.226 C6.881,13.212 6.653,13.346 6.428,13.591 C5.768,14.310 5.096,15.018 4.419,15.721 C4.269,15.878 4.104,16.111 3.843,15.985 C3.625,15.879 3.671,15.627 3.670,15.425 C3.665,14.723 3.660,14.020 3.674,13.319 C3.681,12.961 3.553,12.744 3.195,12.626 C1.393,12.031 0.485,10.696 0.171,8.928 C-0.092,7.452 -0.041,5.959 0.207,4.488 C0.626,2.006 2.013,0.739 4.772,0.263 C5.843,0.078 6.923,-0.046 7.897,0.003 ZM12.580,9.932 C12.582,9.735 12.514,9.564 12.361,9.438 C11.814,8.985 11.232,8.580 10.575,8.301 C10.193,8.139 9.824,8.220 9.561,8.556 C9.131,9.104 8.610,9.066 8.045,8.824 C6.964,8.361 6.183,7.598 5.648,6.563 C5.386,6.055 5.423,5.667 5.932,5.347 C6.417,5.042 6.462,4.630 6.146,4.181 C5.884,3.809 5.619,3.435 5.317,3.096 C4.751,2.462 4.477,2.404 3.932,2.733 C2.963,3.317 2.657,3.840 2.950,4.557 C4.368,8.028 7.009,10.186 10.545,11.342 C11.316,11.594 12.584,10.672 12.580,9.932 ZM8.315,2.041 C8.158,2.090 7.839,1.920 7.829,2.217 C7.822,2.437 8.130,2.355 8.302,2.391 C8.445,2.421 8.592,2.431 8.735,2.457 C10.996,2.876 12.179,4.087 12.513,6.325 C12.529,6.427 12.545,6.530 12.574,6.629 C12.607,6.745 12.635,6.892 12.803,6.864 C12.928,6.844 12.940,6.717 12.940,6.616 C12.939,6.409 12.943,6.200 12.912,5.997 C12.581,3.807 10.584,2.083 8.315,2.041 ZM8.580,3.237 C8.481,3.243 8.244,3.152 8.212,3.362 C8.180,3.575 8.425,3.560 8.582,3.590 C8.724,3.617 8.870,3.631 9.011,3.665 C10.315,3.977 11.040,4.752 11.229,6.019 C11.256,6.203 11.183,6.517 11.491,6.473 C11.755,6.434 11.678,6.144 11.654,5.949 C11.467,4.446 10.234,3.341 8.580,3.237 Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="ico-c telega-c">
+                            <a href="" class="">
+                                <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        width="17px" height="17px">
+                                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                          d="M16.900,1.367 C16.900,1.511 16.900,1.655 16.900,1.799 C16.737,2.650 16.572,3.501 16.411,4.352 C15.714,8.037 15.017,11.721 14.327,15.406 C14.266,15.733 14.123,15.972 13.816,16.100 C13.684,16.100 13.553,16.100 13.422,16.100 C13.265,16.000 13.104,15.905 12.951,15.800 C11.715,14.955 10.481,14.107 9.247,13.260 C9.026,13.108 9.027,13.109 8.811,13.266 C8.155,13.745 7.498,14.222 6.841,14.700 C6.663,14.830 6.473,14.913 6.245,14.862 C5.906,14.787 5.755,14.546 5.673,14.229 C5.327,12.888 4.973,11.549 4.628,10.208 C4.592,10.070 4.529,9.993 4.396,9.943 C3.170,9.473 1.947,8.994 0.721,8.527 C0.448,8.423 0.219,8.285 0.100,8.004 C0.100,7.871 0.100,7.738 0.100,7.605 C0.205,7.348 0.402,7.200 0.653,7.099 C5.716,5.065 10.778,3.030 15.837,0.987 C16.258,0.817 16.674,0.872 16.900,1.367 ZM15.146,3.652 C15.134,3.648 15.122,3.643 15.110,3.638 C15.066,3.678 15.022,3.718 14.979,3.760 C13.230,5.461 11.481,7.163 9.732,8.865 C9.164,9.417 8.599,9.971 8.028,10.519 C7.920,10.624 7.913,10.693 8.049,10.768 C8.121,10.808 8.186,10.860 8.253,10.906 C9.832,11.989 11.411,13.073 12.990,14.155 C13.139,14.257 13.149,14.252 13.182,14.079 C13.225,13.851 13.268,13.623 13.311,13.396 C13.833,10.629 14.354,7.862 14.875,5.096 C14.966,4.615 15.056,4.133 15.146,3.652 ZM13.156,3.608 C13.148,3.595 13.140,3.583 13.132,3.570 C9.652,4.970 6.172,6.370 2.687,7.772 C2.730,7.838 2.789,7.841 2.837,7.860 C3.547,8.136 4.256,8.410 4.966,8.684 C5.716,8.975 5.716,8.975 5.925,9.767 C5.991,10.015 6.058,10.262 6.116,10.479 C8.448,8.169 10.817,5.904 13.156,3.608 ZM6.313,11.248 C6.468,11.836 6.612,12.389 6.758,12.941 C6.780,13.026 6.829,13.004 6.881,12.966 C7.160,12.763 7.439,12.559 7.719,12.357 C7.798,12.301 7.786,12.257 7.713,12.207 C7.257,11.896 6.802,11.583 6.313,11.248 Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <p>
+                            <a href="tel:+73422763606">
+                                +7 (342) 276-36-06
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md ">
+                    <div class="ico-cc">
+                        <div class="ico-c vk-c">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="19px" height="11px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                      d="M2.736,0.597 C3.066,0.597 3.397,0.606 3.727,0.594 C4.055,0.582 4.291,0.733 4.466,0.995 C4.704,1.352 4.937,1.712 5.162,2.078 C5.660,2.883 6.121,3.712 6.645,4.501 C6.838,4.790 7.035,5.076 7.293,5.311 C7.569,5.563 7.762,5.520 7.906,5.171 C8.078,4.755 8.114,4.310 8.149,3.869 C8.202,3.223 8.195,2.576 8.189,1.928 C8.185,1.448 7.989,1.248 7.516,1.238 C7.392,1.236 7.267,1.244 7.142,1.243 C7.095,1.243 7.032,1.265 7.006,1.210 C6.976,1.146 7.034,1.104 7.071,1.066 C7.589,0.532 8.205,0.178 8.933,0.042 C9.402,-0.045 9.878,0.015 10.351,0.002 C10.576,-0.005 10.800,0.000 11.025,0.001 C11.397,0.001 11.611,0.159 11.735,0.522 C11.868,0.908 11.856,1.311 11.858,1.708 C11.861,2.602 11.759,3.495 11.845,4.389 C11.870,4.655 11.906,4.920 12.018,5.165 C12.196,5.553 12.556,5.593 12.816,5.254 C12.933,5.103 13.012,4.929 13.083,4.753 C13.668,3.300 14.466,1.970 15.329,0.676 C15.483,0.444 15.717,0.403 15.951,0.391 C16.858,0.344 17.739,0.493 18.597,0.789 C18.650,0.807 18.701,0.832 18.752,0.857 C18.979,0.972 19.024,1.066 18.960,1.315 C18.849,1.750 18.622,2.131 18.398,2.512 C17.852,3.440 17.189,4.283 16.573,5.161 C16.446,5.341 16.326,5.528 16.220,5.722 C15.974,6.169 16.003,6.341 16.405,6.640 C16.866,6.983 17.279,7.376 17.666,7.799 C18.070,8.241 18.474,8.680 18.797,9.191 C19.154,9.753 18.971,10.309 18.697,10.595 C18.451,10.851 18.142,10.987 17.793,10.992 C17.101,11.002 16.408,10.994 15.716,10.996 C15.527,10.996 15.357,10.942 15.218,10.812 C15.025,10.632 14.836,10.448 14.650,10.260 C14.221,9.827 13.793,9.391 13.311,9.017 C13.212,8.940 13.107,8.870 13.004,8.800 C12.654,8.561 12.289,8.470 11.900,8.701 C11.484,8.948 11.227,9.302 11.211,9.804 C11.204,10.046 11.206,10.286 11.134,10.520 C11.028,10.865 10.857,10.990 10.508,10.996 C9.782,11.009 9.063,10.980 8.363,10.750 C7.466,10.456 6.710,9.926 6.022,9.289 C4.098,7.508 2.679,5.368 1.685,2.930 C1.480,2.426 1.272,1.923 1.071,1.417 C0.885,0.951 1.028,0.682 1.521,0.642 C1.923,0.608 2.331,0.635 2.736,0.635 C2.736,0.622 2.736,0.609 2.736,0.597 Z"/>
+                            </svg>
+                        </div>
+                        <p>
+                            Мы ВКонтакте
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md ">
+                    <div class="ico-cc">
+                        <div class="ico-c">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="14px" height="11px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                      d="M12.994,10.994 C8.954,10.985 4.914,10.989 0.874,10.991 C0.733,10.991 0.603,10.959 0.479,10.895 C0.236,10.769 0.097,10.552 0.008,10.293 C0.008,7.821 0.008,5.349 0.008,2.876 C0.135,2.975 0.264,3.074 0.390,3.175 C1.825,4.320 3.259,5.465 4.694,6.610 C5.280,7.078 5.862,7.550 6.454,8.008 C6.812,8.285 7.192,8.273 7.555,8.005 C7.692,7.903 7.827,7.798 7.962,7.692 C9.919,6.157 11.876,4.622 13.833,3.088 C13.883,3.049 13.926,2.995 13.996,2.990 C13.996,5.425 13.996,7.859 13.996,10.293 C13.827,10.784 13.500,10.995 12.994,10.994 ZM7.130,6.488 C7.033,6.567 6.966,6.571 6.871,6.490 C6.620,6.278 6.362,6.075 6.106,5.869 C4.881,4.883 3.656,3.896 2.431,2.911 C1.624,2.261 0.815,1.614 0.008,0.965 C0.008,0.879 0.008,0.794 0.008,0.708 C0.179,0.209 0.516,0.006 1.024,0.007 C5.018,0.015 9.013,0.011 13.007,0.012 C13.116,0.012 13.225,0.004 13.333,0.033 C13.680,0.124 13.879,0.372 13.996,0.708 C13.996,0.794 13.996,0.879 13.996,0.965 C13.523,1.344 13.049,1.722 12.577,2.102 C10.761,3.563 8.944,5.024 7.130,6.488 Z"/>
+                            </svg>
+                        </div>
+                        <p>
+                            a-garant.lex@yandex.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="my-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-2 col-xl-3">
+                <a href="/" class="logo-link">
+                    <div class="logo-c">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-md-8 col-lg-5 col-xl-5 main-menu-ccf">
+                <div class="main-menu">
+                    <ul>
+                        <li data-trigger="#vaka" >
+                            <a href="javascript:void(0)">
+                                Отзывы клиентов
+                            </a>
+                        </li>
+                        <li data-trigger="#slider-object">
+                            <a href="javascript:void(0)">
+                                О нас
+                            </a>
+                        </li>
+                        <li data-trigger="#about-company">
+                            <a href="javascript:void(0)">
+                                Услуги
+                            </a>
+                        </li>
+                        <li data-trigger="#employer">
+                            <a href="javascript:void(0)">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 call-hcc col-md-7 col-lg-4 col-xl-4">
+                <div class="call-b">
+                    <div class="phone-hc">
+                        <a href="https://praweb.ru/">
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="86px" height="39px">
+                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                                      d="M83.708,19.811 C82.228,19.811 81.419,18.931 81.419,17.391 L81.419,12.390 C81.419,10.850 82.228,9.971 83.708,9.971 C85.188,9.971 85.997,10.850 85.997,12.390 L85.997,17.391 C85.997,18.931 85.188,19.811 83.708,19.811 ZM84.489,12.293 C84.489,11.606 84.188,11.345 83.708,11.345 C83.228,11.345 82.927,11.606 82.927,12.293 L82.927,17.488 C82.927,18.175 83.228,18.436 83.708,18.436 C84.188,18.436 84.489,18.175 84.489,17.488 L84.489,12.293 ZM79.298,28.440 C78.108,28.440 77.458,27.745 77.458,26.529 L77.458,22.576 C77.458,21.359 78.108,20.665 79.298,20.665 C80.487,20.665 81.137,21.359 81.137,22.576 L81.137,26.529 C81.137,27.745 80.487,28.440 79.298,28.440 ZM79.926,22.500 C79.926,21.957 79.683,21.750 79.298,21.750 C78.912,21.750 78.670,21.957 78.670,22.500 L78.670,26.605 C78.670,27.147 78.912,27.354 79.298,27.354 C79.683,27.354 79.926,27.147 79.926,26.605 L79.926,22.500 ZM78.938,10.081 L80.446,10.081 L80.446,19.700 L78.938,19.700 L78.938,10.081 ZM75.730,19.700 L73.346,19.700 L73.346,10.081 L75.730,10.081 C77.239,10.081 77.979,10.919 77.979,12.458 L77.979,17.323 C77.979,18.862 77.239,19.700 75.730,19.700 ZM76.471,12.390 C76.471,11.703 76.183,11.455 75.703,11.455 L74.853,11.455 L74.853,18.326 L75.703,18.326 C76.183,18.326 76.471,18.079 76.471,17.391 L76.471,12.390 ZM70.069,19.824 C68.589,19.824 67.821,18.944 67.821,17.405 L67.821,10.081 L69.329,10.081 L69.329,17.502 C69.329,18.188 69.630,18.436 70.110,18.436 C70.590,18.436 70.891,18.188 70.891,17.502 L70.891,10.081 L72.317,10.081 L72.317,17.405 C72.317,18.944 71.549,19.824 70.069,19.824 ZM68.165,27.354 C68.550,27.354 68.793,27.159 68.793,26.615 L68.793,20.751 L69.938,20.751 L69.938,26.540 C69.938,27.755 69.322,28.450 68.132,28.450 C66.943,28.450 66.326,27.755 66.326,26.540 L66.326,20.751 L67.538,20.751 L67.538,26.615 C67.538,27.159 67.780,27.354 68.165,27.354 ZM65.655,19.700 L64.147,19.700 L64.147,11.455 L62.570,11.455 L62.570,10.081 L67.231,10.081 L67.231,11.455 L65.655,11.455 L65.655,19.700 ZM59.897,19.811 C58.417,19.811 57.649,18.931 57.649,17.391 L57.649,16.801 L59.075,16.801 L59.075,17.488 C59.075,18.175 59.376,18.422 59.856,18.422 C60.336,18.422 60.638,18.175 60.638,17.488 C60.638,15.509 57.690,15.138 57.690,12.390 C57.690,10.850 58.444,9.971 59.911,9.971 C61.378,9.971 62.132,10.850 62.132,12.390 L62.132,12.692 L60.706,12.692 L60.706,12.293 C60.706,11.606 60.432,11.345 59.952,11.345 C59.472,11.345 59.198,11.606 59.198,12.293 C59.198,14.272 62.145,14.643 62.145,17.391 C62.145,18.931 61.378,19.811 59.897,19.811 ZM59.456,21.838 L57.363,21.838 L57.363,23.955 L59.026,23.955 L59.026,25.041 L57.363,25.041 L57.363,27.267 L59.456,27.267 L59.456,28.353 L56.151,28.353 L56.151,20.751 L59.456,20.751 L59.456,21.838 ZM53.080,28.353 L52.639,24.303 L52.199,28.353 L50.536,28.353 L49.676,20.751 L50.855,20.751 L51.505,26.746 L52.088,20.751 L53.256,20.751 L53.862,26.790 L54.489,20.751 L55.547,20.751 L54.688,28.353 L53.080,28.353 ZM52.563,19.700 L50.191,19.700 L50.191,10.081 L52.467,10.081 C54.030,10.081 54.702,10.809 54.702,12.293 L54.702,12.637 C54.702,13.626 54.400,14.259 53.729,14.575 C54.537,14.890 54.852,15.619 54.852,16.636 L54.852,17.419 C54.852,18.903 54.071,19.700 52.563,19.700 ZM53.194,12.445 C53.194,11.758 52.961,11.455 52.426,11.455 L51.699,11.455 L51.699,13.998 L52.289,13.998 C52.851,13.998 53.194,13.750 53.194,12.981 L53.194,12.445 ZM53.345,16.540 C53.345,15.646 53.057,15.371 52.371,15.371 L51.699,15.371 L51.699,18.326 L52.563,18.326 C53.070,18.326 53.345,18.093 53.345,17.378 L53.345,16.540 ZM48.124,26.974 L46.637,26.974 L46.427,28.353 L45.315,28.353 L46.549,20.751 L48.322,20.751 L49.555,28.353 L48.333,28.353 L48.124,26.974 ZM47.375,22.098 L46.791,25.942 L47.959,25.942 L47.375,22.098 ZM45.147,10.081 L49.260,10.081 L49.260,11.455 L46.655,11.455 L46.655,14.135 L48.725,14.135 L48.725,15.509 L46.655,15.509 L46.655,18.326 L49.260,18.326 L49.260,19.700 L45.147,19.700 L45.147,10.081 ZM43.631,27.419 L43.631,26.224 C43.631,25.519 43.389,25.258 42.838,25.258 L42.420,25.258 L42.420,28.353 L41.208,28.353 L41.208,20.751 L43.036,20.751 C44.292,20.751 44.832,21.327 44.832,22.500 L44.832,23.097 C44.832,23.879 44.578,24.389 44.038,24.639 C44.644,24.889 44.843,25.465 44.843,26.257 L44.843,27.430 C44.843,27.799 44.854,28.070 44.975,28.353 L43.741,28.353 C43.675,28.158 43.631,28.038 43.631,27.419 ZM43.620,22.619 C43.620,22.077 43.433,21.838 43.003,21.838 L42.420,21.838 L42.420,24.172 L42.893,24.172 C43.345,24.172 43.620,23.976 43.620,23.368 L43.620,22.619 ZM41.323,19.700 L40.774,14.575 L40.226,19.700 L38.156,19.700 L37.086,10.081 L38.554,10.081 L39.362,17.666 L40.089,10.081 L41.542,10.081 L42.296,17.721 L43.077,10.081 L44.393,10.081 L43.324,19.700 L41.323,19.700 ZM40.647,22.630 L40.647,23.619 C40.647,24.835 40.052,25.497 38.841,25.497 L38.268,25.497 L38.268,28.353 L37.056,28.353 L37.056,20.751 L38.841,20.751 C40.052,20.751 40.647,21.414 40.647,22.630 ZM38.268,24.411 L38.841,24.411 C39.226,24.411 39.435,24.237 39.435,23.695 L39.435,22.554 C39.435,22.011 39.226,21.838 38.841,21.838 L38.268,21.838 L38.268,24.411 ZM34.014,29.140 C34.014,29.282 33.978,29.365 33.847,29.439 C30.993,31.065 28.143,32.695 25.292,34.325 C22.593,35.869 19.894,37.413 17.196,38.958 C17.111,39.006 17.044,39.028 16.946,38.973 C15.150,37.961 13.353,36.952 11.554,35.946 C11.458,35.892 11.420,35.831 11.421,35.720 C11.425,33.772 11.426,31.825 11.428,29.878 C11.428,29.705 11.441,29.697 11.593,29.784 C13.373,30.796 15.154,31.807 16.932,32.824 C17.062,32.898 17.156,32.897 17.287,32.823 C19.966,31.298 22.649,29.778 25.331,28.258 C26.436,27.631 27.540,27.002 28.647,26.378 C28.735,26.329 28.772,26.273 28.769,26.172 C28.763,25.949 28.767,25.725 28.768,25.502 C28.790,21.345 28.785,17.188 28.789,13.031 C28.789,12.906 28.753,12.834 28.640,12.775 C27.414,12.130 26.223,11.424 25.018,10.743 C22.908,9.551 20.802,8.353 18.694,7.157 C18.207,6.881 17.720,6.608 17.236,6.328 C17.145,6.274 17.073,6.276 16.983,6.327 C14.459,7.755 11.934,9.180 9.409,10.605 C8.329,11.214 7.248,11.822 6.168,12.431 C5.805,12.635 5.801,12.634 5.807,13.052 C5.843,15.344 5.812,17.637 5.837,19.930 C5.861,22.122 5.837,24.314 5.864,26.506 C5.882,27.968 5.873,29.429 5.874,30.890 C5.874,31.459 5.864,32.027 5.858,32.596 C5.857,32.745 5.846,32.750 5.712,32.676 C3.905,31.675 2.099,30.674 0.289,29.679 C0.153,29.604 0.104,29.521 0.102,29.363 C0.077,27.385 0.098,25.407 0.075,23.430 C0.055,21.706 0.074,19.982 0.050,18.258 C0.025,16.429 0.047,14.600 0.023,12.772 C0.009,11.774 0.016,10.777 0.001,9.779 C-0.001,9.645 0.039,9.567 0.159,9.500 C1.781,8.590 3.401,7.675 5.021,6.761 C7.075,5.602 9.128,4.443 11.181,3.284 C13.110,2.196 15.039,1.110 16.966,0.020 C17.057,-0.032 17.127,-0.032 17.218,0.019 C19.617,1.384 22.017,2.746 24.417,4.108 C27.440,5.823 30.464,7.538 33.488,9.252 C33.628,9.332 33.767,9.414 33.909,9.492 C33.983,9.532 34.018,9.587 34.012,9.671 C34.009,9.719 34.012,9.768 34.012,9.816 C34.012,13.028 34.012,16.239 34.012,19.451 C34.012,22.681 34.011,25.910 34.014,29.140 ZM19.402,23.527 C19.402,23.527 19.515,25.149 18.721,26.296 C17.878,27.512 16.124,28.258 16.124,28.258 L14.999,25.947 C14.999,25.947 16.036,25.803 17.047,25.327 C18.306,24.733 19.402,23.527 19.402,23.527 ZM16.027,15.332 C18.769,13.404 22.353,13.214 22.832,13.196 L22.859,13.168 C22.859,13.168 22.859,13.177 22.859,13.196 C22.877,13.195 22.886,13.195 22.886,13.195 C22.886,13.195 22.877,13.211 22.859,13.241 C22.854,13.807 22.751,17.508 20.943,20.266 C19.335,22.721 15.660,24.577 15.660,24.577 L13.856,22.648 L13.860,22.644 L11.862,20.792 C11.862,20.792 13.613,17.029 16.027,15.332 ZM19.661,20.380 C21.730,17.943 22.213,14.875 22.213,14.875 C22.213,14.875 21.486,17.356 19.517,19.674 C17.656,21.866 14.903,22.836 14.903,22.836 C14.903,22.836 17.927,22.422 19.661,20.380 ZM12.831,16.682 C12.831,16.682 11.672,17.827 11.130,19.111 C10.695,20.142 10.592,21.187 10.592,21.187 L8.244,20.150 C8.244,20.150 8.919,18.364 10.098,17.473 C11.210,16.632 12.831,16.682 12.831,16.682 ZM63.827,22.500 L63.827,22.772 C63.827,23.553 63.585,24.053 63.045,24.303 C63.695,24.552 63.948,25.128 63.948,25.932 L63.948,26.551 C63.948,27.723 63.321,28.353 62.109,28.353 L60.204,28.353 L60.204,20.751 L62.032,20.751 C63.288,20.751 63.827,21.327 63.827,22.500 ZM61.416,27.267 L62.109,27.267 C62.517,27.267 62.737,27.083 62.737,26.518 L62.737,25.856 C62.737,25.150 62.506,24.933 61.955,24.933 L61.416,24.933 L61.416,27.267 ZM61.416,21.838 L61.416,23.847 L61.889,23.847 C62.340,23.847 62.616,23.651 62.616,23.043 L62.616,22.619 C62.616,22.077 62.429,21.838 61.999,21.838 L61.416,21.838 ZM73.517,25.302 L73.517,20.751 L74.596,20.751 L74.596,28.353 L73.352,28.353 L71.843,22.848 L71.843,28.353 L70.752,28.353 L70.752,20.751 L72.273,20.751 L73.517,25.302 ZM76.677,28.353 L75.465,28.353 L75.465,20.751 L76.677,20.751 L76.677,28.353 ZM84.672,25.302 L84.672,20.751 L85.751,20.751 L85.751,28.353 L84.507,28.353 L82.997,22.848 L82.997,28.353 L81.907,28.353 L81.907,20.751 L83.427,20.751 L84.672,25.302 Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="consult-b">
+                        <button class="btn-accent" onclick="$('#consult').click();">
+                            Получить консультацию
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Modal for all pages start-->
+<div data-fancybox="" data-src="#consult">
+    <div id="consult" class="white-popup" style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <!--start callback_form-->
+                    <div class="h4">
+                        Обратная связь
+                    </div>
+                    <form>
+                        <input type="hidden"  name="theme" value="Заявка на обратный звонок на странице Главная">
+                        <input type="text" placeholder="Имя*" id="name" name="name">
+                        <input type="tel" placeholder="Телефон*" id="phone" name="phone">
+                        <textarea name="" id="msg-c" cols="30" rows="5" placeholder="Сообщение"></textarea>
+                        <p style="font-size: 12px">
+                            Нажимая "Отправить", Я подтверждаю, что ознакомлен с <a href="" target="_blank">политикой конфиденциальности</a> и даю согласие на обработку своих персональных данных.
+                        </p>
+                        <button type="" name="callback_form" class="btn-accent" value="Заказать">Отправить</button>
+                    </form>
+                    <!--start callback_form-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div data-fancybox="" data-src="#ty">
+    <div id="ty" class="popup white-popup" style="display: none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="h1 text-center">
+                        Спасибо за Заявку!
+                    </div>
+                    <div class="h3 text-center txt-accent">
+                        Наш менеджер свяжется с Вами в ближайшее время.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Modal for all pages end-->
+
+<!--For all pages START-->
+<link rel="stylesheet" href="css/main.min.css">
+<link rel="stylesheet" href="css/custom.css">
+<script src="js/scripts.min.js"></script>
+<script src="js/common.js"></script>
+<!--For all pages END-->
+<!--For this pages START-->
+
+<!--For this pages END-->
+
+<script>
+    /*For this page START*/
+    MainSliderInit();
+    /*For this page END*/
+
+    /*For all pages START*/
+    $(function() {
+        $('input[type="tel"]').mask("+7 (999) 999-9999");
+
+        /*Открытие подменю на мобильной версии в шапке сайта*/
+        $('.headSubmOpen').on('click', function () {
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                $('.js-headSubm').slideUp();
+            }
+            else {
+                $(this).addClass('active');
+                $('.js-headSubm').slideDown();
+            }
+        });
+
+        $(window).resize(function () {
+//			$('.headSubmOpen').addClass('active');
+//			$('.js-headSubm').slideDown();
+        });
+
+    });
+    /*For all pages END*/
+</script>
+
+</body>
+</html>
