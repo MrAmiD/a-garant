@@ -4,12 +4,8 @@
     <list default="true" id="1d4d3dbb-f277-4185-8481-0ccfe0eb9775" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/main.min.css" afterPath="$PROJECT_DIR$/app/css/main.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.js" afterPath="$PROJECT_DIR$/app/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.min.js" afterPath="$PROJECT_DIR$/app/js/common.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/_media.sass" afterPath="$PROJECT_DIR$/app/sass/_media.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.sass" afterPath="$PROJECT_DIR$/app/sass/main.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/services.html" afterPath="$PROJECT_DIR$/app/services.html" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -177,11 +173,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file leaf-file-name="main.sass" pinned="false" current-in-tab="true">
+          <file leaf-file-name="main.sass" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="1223" column="25" selection-start-line="1223" selection-start-column="25" selection-end-line="1223" selection-end-column="25" />
+                <state relative-caret-position="376">
+                  <caret line="959" column="31" selection-start-line="959" selection-start-column="31" selection-end-line="959" selection-end-column="31" />
                   <folding>
                     <element signature="e#8807#9303#0" expanded="false" />
                     <element signature="e#9316#9790#0" expanded="false" />
@@ -202,11 +198,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="_media.sass" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_media.sass" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="399">
-                  <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+                <state relative-caret-position="637">
+                  <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
                   <folding />
                 </state>
               </provider>
@@ -312,10 +308,10 @@
         <option value="$PROJECT_DIR$/app/sass/_vars.sass" />
         <option value="$PROJECT_DIR$/app/main.html" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
-        <option value="$PROJECT_DIR$/app/sass/_media.sass" />
-        <option value="$PROJECT_DIR$/app/sass/main.sass" />
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/services.html" />
+        <option value="$PROJECT_DIR$/app/sass/main.sass" />
+        <option value="$PROJECT_DIR$/app/sass/_media.sass" />
       </list>
     </option>
   </component>
@@ -579,7 +575,7 @@
       <workItem from="1522208634895" duration="1641000" />
       <workItem from="1522811599071" duration="471000" />
       <workItem from="1522812728009" duration="24399000" />
-      <workItem from="1522897349950" duration="1436000" />
+      <workItem from="1522897349950" duration="2045000" />
     </task>
     <task id="LOCAL-00001" summary="layouts typeless">
       <created>1507611710743</created>
@@ -665,11 +661,18 @@
       <option name="project" value="LOCAL" />
       <updated>1522842461903</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update">
+      <created>1522898816006</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1522898816006</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353534000" />
+    <option name="totallyTimeSpent" value="354143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -721,7 +724,8 @@
     <MESSAGE value="bootstrap vars and media" />
     <MESSAGE value="main page" />
     <MESSAGE value="contentPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="contentPage" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1234,6 +1238,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="36" selection-start-line="11" selection-start-column="38527" selection-end-line="11" selection-end-column="38536" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1320,37 +1325,6 @@
             <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <marker date="1522840053503" expanded="true" signature="1357:1440" ph="..." />
             <marker date="1522840053503" expanded="true" signature="1369:1428" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="1223" column="25" selection-start-line="1223" selection-start-column="25" selection-end-line="1223" selection-end-column="25" />
-          <folding>
-            <element signature="e#8807#9303#0" expanded="false" />
-            <element signature="e#9316#9790#0" expanded="false" />
-            <element signature="e#9801#9840#0" expanded="false" />
-            <element signature="e#9853#11076#0" expanded="false" />
-            <element signature="e#10091#10275#0" expanded="false" />
-            <element signature="e#10285#10315#0" expanded="false" />
-            <element signature="e#10325#10354#0" expanded="false" />
-            <element signature="e#11096#13003#0" expanded="false" />
-            <element signature="e#13037#13122#0" expanded="false" />
-            <element signature="e#13134#13320#0" expanded="false" />
-            <element signature="e#14054#14328#0" expanded="false" />
-            <element signature="e#14339#14602#0" expanded="false" />
-            <element signature="e#14615#15095#0" expanded="false" />
-            <element signature="e#15341#16411#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1443,6 +1417,37 @@
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="959" column="31" selection-start-line="959" selection-start-column="31" selection-end-line="959" selection-end-column="31" />
+          <folding>
+            <element signature="e#8807#9303#0" expanded="false" />
+            <element signature="e#9316#9790#0" expanded="false" />
+            <element signature="e#9801#9840#0" expanded="false" />
+            <element signature="e#9853#11076#0" expanded="false" />
+            <element signature="e#10091#10275#0" expanded="false" />
+            <element signature="e#10285#10315#0" expanded="false" />
+            <element signature="e#10325#10354#0" expanded="false" />
+            <element signature="e#11096#13003#0" expanded="false" />
+            <element signature="e#13037#13122#0" expanded="false" />
+            <element signature="e#13134#13320#0" expanded="false" />
+            <element signature="e#14054#14328#0" expanded="false" />
+            <element signature="e#14339#14602#0" expanded="false" />
+            <element signature="e#14615#15095#0" expanded="false" />
+            <element signature="e#15341#16411#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/_media.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
