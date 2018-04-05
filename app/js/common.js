@@ -92,7 +92,6 @@ function feedbackSliderSliderInit(){//слайдер на главной стр�
 
 $(function() {
     /*datepicker start*/
-
     //Календарь для выбора даты
     var now = new Date();
     var minDate = new Date(new Date().getTime() + 30 * 60 * 1000);//now +30 минут
@@ -184,4 +183,14 @@ $(function() {
         //bugfix fixed menu 3 END
         $("#my-header").css({ top: 0});
     });
+
+    $('.main-menu ul li').on('click', function () {
+        $("html, body").animate({ scrollTop: $($(this).data().trigger).offset().top - 0}, 600);
+    });
+    $(document).on( "click", "#my-menu .mm-listview li", function(){
+        $("html, body").animate({ scrollTop: $($(this).data().trigger).offset().top - 0}, 600);
+        var API = $("#my-menu").data( "mmenu" );
+        API.close();
+    });
+
 });
